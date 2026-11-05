@@ -1,7 +1,9 @@
-#unistring
-=========
+# unistring
 
-##Why
+> [!IMPORTANT]
+> **Deprecated / Archived**: Starting with **Erlang/OTP 20**, the standard library `string` module provides native Unicode case conversion via `string:lowercase/1`, `string:uppercase/1`, and `string:titlecase/1`. This library is no longer needed on modern Erlang/OTP releases and has been archived.
+
+## Why
 Starting with Erlang **R16B**, [string module](http://www.erlang.org/doc/man/string.html) in standard library handles Unicode utf-8 strings very well, except that ```string:to_upper/1``` and ```string:to_lower/1``` ignore unicode code points > 255. 
 
 Unistring library uses Lowercase Mapping, Uppercase Mapping and Titlecase Mapping columns hexadecimal values from [UnicodeData.txt](ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.txt).
